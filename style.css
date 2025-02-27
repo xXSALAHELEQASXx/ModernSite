@@ -1,0 +1,515 @@
+
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('./Assets/fonts/SpaceGrotesk-Bold.ttf') format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('./Assets/fonts/SpaceGrotesk-Light.ttf') format("truetype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('./Assets/fonts/SpaceGrotesk-Medium.ttf') format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('./Assets/fonts/SpaceGrotesk-Regular.ttf') format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('./Assets/fonts/SpaceGrotesk-SemiBold.ttf') format("truetype");
+    font-weight: 600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SpaceGrotesk;
+}
+
+:root {
+    --primary-color: #B9FF66;
+    --secondary-color: #191A23;
+    --body-color: #F3F3F3;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--body-color);
+    align-items:center;
+    padding: 10px;
+    box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.logo-container >a> img{
+    width: 220px;
+    height: 56px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.listStyle{
+    list-style: none;
+    position: relative;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.listStyle a{
+    cursor: pointer;
+    font-family: SpaceGrotesk;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+.listStyle a:hover{
+    color: red;
+}
+
+.quote{
+    background-color: transparent;
+    padding: 10px 20px;
+    display: flex;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 7px;
+    transition: 0.3s all ease;
+}
+
+.quote:hover{
+    background-color: #B9FF66;
+    color: var(--secondary-color)
+}
+
+.headerText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0.5rem 1.6rem;
+}
+
+.text-content {
+    padding-top: 25px;
+    flex: 1;
+    max-width: 60%;
+    align-self: flex-start;
+}
+.text-content h1{
+    font-size: 50px;
+}
+.text-content p{
+    padding-top: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.book{
+    display: inline-block;
+    color: var(--body-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    transition: 0.2s all ease;
+}
+.book:hover{
+background-color: var(--primary-color);
+color: var(--secondary-color);
+}
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.illustration {
+    max-width: 100%;
+    height: 50vh;
+}
+.companies{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+.service{
+    background-color: var(--primary-color);
+    display: inline-block;
+    font-size: 1.7rem;
+    margin: 0px 20px 0px 75px;
+    padding: 0 5px;
+}
+.serviceText{
+    display: inline-block;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 50px;
+}
+.card{
+    height: 30vh;
+    border-radius: 20px;
+    width: auto;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+    background-color: white;
+}
+.card1 {
+    background-color: white;
+}
+.card1 h3{
+    background-color: var(--primary-color);
+    display: inline;
+    padding: 2px 5px;
+}
+.card1 i{
+    font-size: 0.8rem;
+    background-color: var(--secondary-color);
+    color: var(--body-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+.card1 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding-left: 5px;
+    transition: 0.3s all ease;
+}
+
+.card1 {
+    background-color: white;
+}
+.card1 img{
+    width: 86%;
+}
+.card2{
+    background-color: var(--secondary-color)
+}
+.card2 h3{
+    background-color: white;
+    display: inline;
+    padding: 2px 5px;
+}
+.card2 i{
+    font-size: 0.8rem;
+    background-color: white;
+    color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+.card2 a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    transition: 0.3s all ease;
+}
+.card-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+.card2 a:hover{
+    color: var(--primary-color);
+}
+.card1 a:hover{
+    color: red;
+}
+.card-img{
+    padding-left: 60%;
+}
+.proposalParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proposal {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--body-color);
+    border-radius: 30px;
+    padding: 35px;
+    margin-top: 50px;
+    width: 90%;
+    height: 40vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.proposal .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.proposal h3 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.proposal p {
+    margin: 0;
+}
+
+.proposal a {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    transition: 0.3s all ease;
+}
+.proposal a:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.proposal img {
+    width: 250px;
+}
+.caseStudy{
+    background-color: var(--primary-color);
+    display: inline-block;
+    font-size: 1.7rem;
+    margin: 150px 20px 50px 75px;
+    padding: 0 5px;
+}
+.caseText{
+    display: inline-block;
+    margin-bottom: 70px;
+    padding-left: 5%;
+}
+.footContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.baba{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 80%;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+.special{
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+    padding: 30px 100px;
+}
+.foot p{
+    color: white;
+}
+.foot a{
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+.foot a:hover{
+    color: red;
+}
+@media (max-width: 540px) {
+    .list{
+        gap: 0px;
+    }    
+    .listStyle{
+        margin: 0px;
+        padding: 10px 10px;
+        text-decoration: overline;
+    }         
+    .headerText {
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+    }
+    .text-content {
+        padding-top: 25px;
+        flex: 1;
+        max-width: 50%;
+    }
+    .text-content h1{
+        font-size: 40px;
+    }
+    .text-content p{
+        padding-top: 1rem;
+        margin-bottom: 1.6rem;
+    }
+    .illustration {
+        max-width: 50vw;
+        height: 40vh;
+    }
+    .companies{
+        margin-top: 40px;
+        margin-bottom: 75px;
+    }
+    .service{
+        margin: 0px 20px 0px 150px;
+        padding: 0 5px;
+    }
+    .serviceText{
+        margin-top: 50px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        height: 170vh;
+    }
+    .card{
+        height: 35vh;
+    }
+   
+    .card-img{
+        padding-left: 15%;
+    }
+    .proposal h3 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .proposal img {
+        width: 40vw;
+        height: 20vh;
+        padding-left: 35px;
+    }
+    .proposal .text-container {
+        gap: 10px;
+    }
+    .baba{
+        height: 360px;
+        width: 100%;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    .special{  
+        border-top: none;
+        border-bottom: none;
+        padding: 20px 10px;
+    }
+    .proposal{
+        height: 50vh;
+    }
+}
+@media only screen and (min-width: 541px) and (max-width: 768px) { 
+    .list{
+        gap: 0px;
+    }    
+    .listStyle{
+        margin: 0px;
+        padding: 10px 10px;
+        text-decoration: overline;
+    }       
+
+    .card-img{
+        padding-left: 10%;
+    }
+    .baba{
+        width: 100vw;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    .special{
+        padding: 30px 10px;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        height: 30vh;
+        border-radius: 20px;
+        width: auto;
+        border: 1px solid black;
+        padding: 20px;
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+        background-color: white;
+    }
+    .card1 h3{
+        background-color: var(--primary-color);
+        display: inline;
+        padding: 2px 5px;
+    }
+    .card1 i{
+        font-size: 0.8rem;
+        background-color: var(--secondary-color);
+        color: var(--body-color);
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .card1 a{
+        text-decoration: none;
+        color: var(--secondary-color);
+        padding-left: 5px;
+        margin-bottom: 10px;
+        transition: 0.3s all ease;
+    }
+    .card1 {
+        background-color: white;
+    }
+    
+    .card2{
+        background-color: var(--secondary-color)
+    }
+    .card2 h3{
+        background-color: white;
+        display: inline;
+        padding: 2px 5px;
+    }
+    .card2 i{
+        font-size: 0.8rem;
+        background-color: white;
+        color: var(--secondary-color);
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .card-img{
+        padding-left: 50%;
+    }
+}
+@media only screen and (min-width: 769px)and (max-width: 1170px){
+    .card{
+        height: 35vh;
+    }
+    .card-img{
+        padding-left: 35%;
+    }
+}
+@media only screen and (min-width: 1171px)and (max-width: 1280px){
+    .card{
+        height: 40vh;
+    }
+    .card-img{
+        padding-left: 45%;
+    }
+}
